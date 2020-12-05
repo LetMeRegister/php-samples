@@ -7,20 +7,16 @@ $children = [
         ],
         [
             "val" => 8
-        ],
-        [
-            "val" => 7
         ]
     ]
 ];
-$target_val = 7;
 foreach ($children['children'] as &$child) {
     if (isset($child['children'])) {
         //Do something
     }
 }
-var_dump($children);
+var_dump($children['children'][1]['val'] === 8);  //True
 foreach ($children['children'] as $child) {
-    echo "\nValue: {$child['val']}\n";
 }
-var_dump($children);
+
+var_dump($children['children'][1]['val'] === 8);  //True
