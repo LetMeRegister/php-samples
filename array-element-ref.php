@@ -18,4 +18,4 @@ foreach ($children['children'] as $child) {
     //Do Something
 }
 
-var_dump($children['children'][1]['val'] === 8);  //True
+var_dump($children['children'][1]['val'] === 8);  //False
